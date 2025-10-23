@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/script.js"></script>
+</head>
+<body>
+    <h1>Previsão do Tempo</h1>
+    <div class="content">
+        <h3 class="name">Cidade</h3>
+        <input type="text" name="cidade" id="cidade">
+        <input type="button" value="Buscar" id="buscar" onclick="buscarTemperatura()">
+    </div>
+    <div class="resultado" id="resultado">
+        <h2 id="tempo">tempo</h2>
+        <h2 id="temperatura">temperatura</h2>
+        <img src="src/images/02d_t@4x.png">
+        <h2 id="condicao">condição</h2>
+        <h2 id="umidade">umidade</h2>
+    </div>
+</body>
+</html>
