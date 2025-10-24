@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previsão do Tempo</title>
+    <title>Meteorologia</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/script.js"></script>
 </head>
 <body>
-    <h1>Previsão do Tempo</h1>
-    <div class="content">
-        <h3 class="name">Cidade</h3>
-        <input type="text" name="cidade" id="cidade">
-        <input type="button" value="Buscar" id="buscar" onclick="buscarTemperatura()">
+    <div class="container">
+        <h1>Cidade ou Estado ou País</h1>
+        <input type="text" name="cidade" id="cidade" class="cidade" placeholder="Qual local deseja saber o clima?...">
+        <input type="button" value="Verificar" class="verificar" id="verificar" onclick="buscarClima()">
     </div>
     <div class="resultado" id="resultado">
-        <h2 id="tempo">tempo</h2>
-        <h2 id="temperatura">temperatura</h2>
-        <img src="src/images/02d_t@4x.png">
-        <h2 id="condicao">condição</h2>
-        <h2 id="umidade">umidade</h2>
+        <h2 id="tempo">Tempo em undefined</h2>
+        <h2 id="temperatura">undefined</h2>
+        <img id="icone" src="src/images/Null.png" width="100px">
+        <h2 id="descricao">undefined</h2>
+        <h2 id="umidade">Umidade: undefined</h2>
     </div>
 </body>
 </html>
