@@ -1,37 +1,74 @@
+@font-face {
+    font-family: 'Bitcount Grid Single';
+    src: url('../fonts/Bitcount_Grid_Single/BitcountGridSingle_Roman-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     background-image: url('../images/Wallpaper_pc.jpg');
-    position: absolute;
+    background-size: cover;
+}
+@media screen and (max-width: 620px){
+    body{
+        font-size: 10px;
+        background-image: url(../images/Wallpaper_mobile.jpg);
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+    input{
+        font-size: 7px;
+    }
+}
+.container, .resultado, h1{
+    position: relative;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
+    font-family: 'Bitcount Grid Single';
+    text-align: center;
+    display: grid;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 30px;
 }
 h1{
-    color: black;
+    width: 60%;
+    background-color: transparent;
 }
-.content{
-    background-color: rgb(0, 0, 255, 0.5);
-    border-radius: 50px;
+h1:hover{
+    transition: all 1000ms;
+    font-size: 40px;
 }
-.resultado{
-    display: none;
-    background-color: rgba(227, 224, 22, 0.50);
-    border-radius: 50px;
-}
-.name, #tempo, #temperatura, #img, #condicao, #umidade{
-    text-align: center;
-}
-.name{
-    font-size: 50px;
-}
-#buscar, #cidade{
+input{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 10px;
+    width: 40%;
 }
-#buscar{
-    display: block;
+.cidade{
+    border-radius: 15px;
+    text-align: center;
+    transition: all 500ms;
+}
+.cidade:hover{
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.verificar{
+    width: 20%;
     padding: 10px;
-    border: 4px solid blue;
-    border-radius: 30px;
+    border-radius: 50px;
+    transition: all 0.10s linear;
+    margin-top: 20px;
+}
+.verificar:hover{
+    padding: 20px;
+    background-color: aqua;
+}
+.verificar:active{
+    background-color: rgb(0, 200, 0);
+}
+.resultado{
+    display: none;
 }
